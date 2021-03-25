@@ -1,0 +1,39 @@
+[
+    {
+        "url": "img/definetlyMaybe.jpg",
+        "caption": "Definetly Maybe - 1994"
+    },
+    {
+        "url":"img/whatsTheStory.jpg",
+        "caption":"Whats The Story(Morning Glory) - 1995"
+    },
+    {
+        "url":"img/beHereNow.jpg",
+        "caption":"Be Here Now - 1997"
+    },
+    {
+        "url":"img/standing.jpg",
+        "caption":"Standing On The Shoulder Of Giants - 2000 "
+    },
+    {
+        "url":"img/heathen.jpg",
+        "caption":"Heathen Chemistry - 2002"
+    },
+    {
+        "url":"img/dontBelieve.jpg",
+        "caption":"Dont Believe The Truth - 2005"
+    },
+    {
+        "url":"img/digOut.jpg",
+        "caption":"Dig Out Your Soul - 2008"
+    },
+    {
+        "url":"img/m2.jpg",
+        "caption":"The Masterplan - 1998"
+    },
+    {
+        "url":"img/stopTheClocks.jpg",
+        "caption":"Stop The Clocks - 2006"
+    }
+
+]

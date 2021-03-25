@@ -1,0 +1,40 @@
+[
+    {
+        "url": "img/begining.jpg",
+        "caption": "Oasis 1992"
+    },
+    {
+        "url":"img/glastonbury95.jpg",
+        "caption":"Glastonbury 95 set list"
+    },
+    {
+        "url":"img/liamAndNoel.jpg",
+        "caption":"Liam and Noel 1995"
+    },
+    {
+        "url":"img/liamAndBonehead.jpg",
+        "caption":"Best mates Liam and Bonehead"
+    },
+    {
+        "url":"img/knebworthCrowd.jpg",
+        "caption":"Knebworth crowd 1996"
+    },
+    {
+        "url":"img/wembley2000.jpg",
+        "caption":"Wembley concert poster"
+    },
+    {
+        "url":"img/finalTour.jpg",
+        "caption":"Final Stadium Tour"
+    },
+    {
+        "url":"img/finalLineup.jpg",
+        "caption":"The band in their last year"
+        
+    },
+    {
+        "url":"img/goodbye.jpg",
+        "caption":"The Band splits up"
+    }
+
+]

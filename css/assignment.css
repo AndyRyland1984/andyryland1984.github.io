@@ -1,0 +1,353 @@
+
+.top{
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    background-color:red(170, 21, 21);
+}
+main{
+    background-color:black;
+}
+
+html,body{
+font-family:sans-serif;
+}
+
+/*index page*/
+
+header {
+    border-radius: 4px 4px 0px 0px;
+    background-color:black;
+}
+.menu{
+    /* Gives the menu its height back */
+    overflow: auto;
+
+    /* Use flexbox */
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li a{
+    padding: 20px;
+    display:block;
+    color:orangered;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.menu li{
+    /* border: solid 1px #000; */
+    text-align: center;
+    background-color:black;
+    /* float: left; */
+}
+a:hover{
+    background-color:orange
+}
+a.active{
+    background-color: darkblue;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 20px 20px 30px black;
+    color:orangered;
+    font-weight: bold;
+    font-size: 75px;
+    margin-top: 0px
+    
+}
+p{
+    text-align: center;
+    color: #bf4c0d;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+/*carousel*/
+.carousel{
+    position: relative;
+   /*width and height of images*/
+    width: 500px;
+    height: 250px;
+    /*ensures only one picture is shown at any time*/
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+/*Carousel images.Changes the width depending on number of images. And changes teh height depending on height of image*/
+.carousel-images{
+/*this is to control the position of our images*/
+position: relative;
+/*to define the order our elemnts are stacked (z Axis)*/
+z-index: 1;
+/*define ofset of initial position*/
+left: 0;
+width: 4500px;
+height: 250px;
+/*to ensure there is a smooth transatcion between my images and the transaction last for half a second with the "ease-in-out function.
+In my JS script the left property is changing of my "carouselImages" so left property needs to transition*/
+transition: left .5s ease-in-out;
+}
+/*set my image size manually*/
+.carousel-images img{
+    width: 500px;
+    height: 250px;
+}
+/*Navigation buttons. Change the width and height to fit to the size of one image*/
+.carousel nav{
+    /*Place navigation over my images*/
+    position: absolute;
+    z-index: 2;
+    /*size of carousel*/
+    width: 500px;
+    height: 200px;
+    /*Centr buttons verticaly*/
+    line-height: 200px;
+}
+/*Gives me nav buttons style*/
+.carousel nav a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30pt;
+    padding: 0px 25px;
+/*Transitons properties when hovering*/
+    transition: all .25s ease;
+/*Properties that change when hovering*/
+    opacity: 0;
+    background-color:orangered;
+}
+/*What happens when we hover over picture*/
+.carousel nav:hover a{
+    transition: all .25s ease;
+    /*change properties back*/
+    opacity: 1;
+    background-color: rgba(0,0,0,0.15);
+}
+/*Float previous nav button to the left*/
+.carousel nav a:first-child{
+float: left;
+}
+/*Float previous nav button to the right*/
+.carousel nav a:last-child{
+    float: right;
+}
+/*Insert our caption over image*/
+.carousel-caption{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color:black;
+    background-color:orangered;
+    height: 25px;
+    line-height: 25px;
+    margin: 0px;
+}
+footer{
+    text-align: center;
+    color: orangered;
+    background-color: black;
+}
+.intro h2{
+    text-align: center;
+    color: #bf4c0d;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.intro p{
+    color:#bf4c0d;
+}
+section.bio{
+    background-color:black;
+}
+section.bio h2{
+    text-align: center;
+    color: lightslategray;
+}
+section.bio p{
+    text-align: center;
+    color: maroon;
+}
+section.bio article{
+    overflow: auto;
+}
+/*History Page*/
+section.history1 p{
+color: orangered;
+}
+section.history2{
+    text-align: center;
+}
+section.history2 h1{
+    background-color:orangered;
+}
+
+section.history2 h2{
+    color: orangered;
+    text-align: center;
+}
+.photo8{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+section.history2 p{
+    color:orangered;
+    margin-top: 0px;
+}
+section.history3{
+    overflow: auto;
+}
+.photo9{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+section.history3 h2{
+    text-align: center;
+    color: orangered;
+}
+section.history3 p{
+    color:orangered;
+    overflow: auto;
+}
+.photo10{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 25%;
+}
+section.history4{
+    overflow: auto;
+}
+/*Album page*/
+/*image Gallery*/
+.gallery{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 750px;
+    margin: auto;
+}
+
+.gallery-item{
+display: flex;
+flex-direction: column;
+width: 33%;
+margin-bottom: 15px;
+text-decoration: none;
+color:orangered;
+padding: 5px;
+box-sizing: border-box;
+}
+
+.gallery-item img{
+    width: 100%;
+}
+
+.gallery-item caption{
+    margin-top: 5px;
+    font-size: 0.75em;
+}
+
+.gallery-item:hover{
+    background-color:orangered;
+}
+
+.gallery-item:hover caption{
+    color:black;
+}
+
+@media(max-width: 900px){
+    .gallery{
+        width:100%;
+    }
+}
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+section.music{
+    overflow: auto;
+}
+section.music li{
+    color: orangered;
+    font-size: 12px;
+}
+h2{
+    text-decoration: underline;
+    color: orangered;
+}
+h3{
+    text-decoration: underline;
+    color: orangered;
+}
+
+
+/*Gigs Page*/
+section.Glastonbury h1{
+    font-size: 25px;
+
+}
+h2{
+    text-align: center;
+}
+.photo3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.photo4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+section.maineRoad h1{
+    font-size: 25px;
+}
+.photo6{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+section.Knebworth h1{
+    font-size: 25px;
+}
+.photo7{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+section.Knebworth{
+    overflow: auto;
+}
+@media(max-width:900px){
+    .top{
+        width: 100%;
+    }
+}
